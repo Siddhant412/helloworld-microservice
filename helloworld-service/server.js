@@ -6,10 +6,10 @@ const app = express();
 
 app.get('/helloworld', async (req, res) => {
     try {
-        const helloResponse = await axios.get('http://hello-service:3000/hello');
+        const helloResponse = await axios.get('http://hello-service:4000/hello');
         const helloMessage = helloResponse.data;
     
-        const worldResponse = await axios.get('http://world-service:3001/world');
+        const worldResponse = await axios.get('http://world-service:4001/world');
         const worldMessage = worldResponse.data;
     
         const fullMessage = `${helloMessage} ${worldMessage}`;
