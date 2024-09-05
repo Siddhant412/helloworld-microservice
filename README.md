@@ -33,6 +33,8 @@ cd helloworld-microservice/
 npm install
 ```
 
+Please refer to the Node.js installation guide [here](https://nodejs.org/en/download/package-manager)
+
 ## Run the services locally: 
 Navigate to each of the services and run the following command
 
@@ -70,7 +72,7 @@ Verify the docker images:
 docker images
 ```
 
-![](https://drive.google.com/uc?id=1QEVczU-9XyEK3B-JSw9cXTj0cU1rXGYT)
+![list of docker images](https://drive.google.com/uc?id=1QEVczU-9XyEK3B-JSw9cXTj0cU1rXGYT)
 
 ## Running the Docker containers:
 
@@ -137,9 +139,9 @@ kubectl get deployments
 kubectl get services
 ```
 
-![](https://drive.google.com/uc?id=1bC6oRGGYEKZE2ncEmRuBHmMW73If8HMO)
+![kubectl deployments](https://drive.google.com/uc?id=1bC6oRGGYEKZE2ncEmRuBHmMW73If8HMO)
 
-![](https://drive.google.com/uc?id=1dGEnNPKQRjR4HOKD62G3r_YlHmVJfhZC)
+![kubectl services](https://drive.google.com/uc?id=1dGEnNPKQRjR4HOKD62G3r_YlHmVJfhZC)
 
 ## Accessing the services
 
@@ -151,7 +153,7 @@ Run the below command to get the url of the service and add the '/hello' endpoin
 minikube service hello-service --url
 ```
 
-![](https://drive.google.com/uc?id=1FTxQ-jjkKus0w2rkYr2szaivkV6Coai1)
+![hello output](https://drive.google.com/uc?id=1FTxQ-jjkKus0w2rkYr2szaivkV6Coai1)
 
 2. World Service
 
@@ -161,7 +163,7 @@ Run the below command to get the url of the service and add the '/world' endpoin
 minikube service world-service --url
 ```
 
-![](https://drive.google.com/uc?id=1plcENHhf981nJ_ogeZ2Oy5Gk0cb-Pg4l)
+![world output](https://drive.google.com/uc?id=1plcENHhf981nJ_ogeZ2Oy5Gk0cb-Pg4l)
 
 3. HelloWorld Service
 
@@ -171,7 +173,7 @@ Run the below command to get the url of the service and add the '/helloworld' en
 minikube service helloworld-service --url
 ```
 
-![](https://drive.google.com/uc?id=1-NxBl-k01DRASkiDpuyF-Jwz2oM91eel)
+![hello world output](https://drive.google.com/uc?id=1-NxBl-k01DRASkiDpuyF-Jwz2oM91eel)
 
 #### To stop the Minikube cluster, run the below command:
 
